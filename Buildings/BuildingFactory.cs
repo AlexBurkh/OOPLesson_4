@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task
+namespace Buildings
 {
-    internal class BuildingFactory
+    public class BuildingFactory
     {
         private BuildingFactory() { }
 

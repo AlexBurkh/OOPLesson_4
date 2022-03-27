@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task
+namespace Buildings
 {
-    internal class Building
+    public class Building
     {
         internal Building(Double height, Int32 numOfFlats, Int32 numOfEntrances) : this(height, 5, numOfFlats, numOfEntrances) { }
         internal Building(Double height, Int32 numOfFloors, Int32 numOfFlats, Int32 numOfEntrances) 

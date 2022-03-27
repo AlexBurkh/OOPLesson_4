@@ -7,6 +7,7 @@
  * Создать тестовый пример, работающий с созданными классами.*/
 
 using System;
+using Buildings;
 
 namespace Task
 {
