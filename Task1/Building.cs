@@ -38,7 +38,7 @@ namespace Task1
             return _numOfFlats / _numOfFloors;
         }
 
-        private Int32 GenerateId()
+        private static Int32 GenerateId()
         {
             return _currentId++;
         }
