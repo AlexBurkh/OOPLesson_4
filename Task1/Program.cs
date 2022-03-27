@@ -8,13 +8,25 @@
 
 using System;
 
-namespace Task1
+namespace Task
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BuildingFactory.CreateBuilding(40, 4, 40, 5);
+            BuildingFactory.CreateBuilding(30, 40, 4);
+
+            foreach (Building building in BuildingFactory.Buildings.Values)
+            {
+                Console.WriteLine($"===================================================\n" +
+                                  $"Здание № {building.Id}\n" +
+                                  $"Высота: {building.Height}\n" +
+                                  $"Число квартир: {building.NumOfFlats}\n" +
+                                  $"Квартир на этаже: {building.CountFlatsOnFloor()}\n");
+            }
+
+            BuildingFactory.Buildings.Remove(1);
         }
     }
 }

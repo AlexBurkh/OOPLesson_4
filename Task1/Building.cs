@@ -4,10 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Task
 {
     internal class Building
     {
+        internal Building(Double height, Int32 numOfFlats, Int32 numOfEntrances) : this(height, 5, numOfFlats, numOfEntrances) { }
+        internal Building(Double height, Int32 numOfFloors, Int32 numOfFlats, Int32 numOfEntrances) 
+        { 
+            _id = GenerateId();
+            _height = height;
+            _numOfEntrances = numOfEntrances;
+            _numOfFlats = numOfFlats;
+            _numOfFloors = numOfFloors;
+        }
+
         private static Int32 _currentId = 0;
         private Int32 _id;
         private Double _height;
@@ -15,7 +25,6 @@ namespace Task1
         private Int32 _numOfFlats;
         private Int32 _numOfEntrances;
 
-        
         public Int32 Id
         {
             get { return _id; }
